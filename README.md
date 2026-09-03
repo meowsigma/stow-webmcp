@@ -17,7 +17,12 @@ Backend MCP would pack in the cloud and email a list. The page would be disinter
 
 People and agents can do something that was brittle before: pack a real constraint problem together, with a veto the agent cannot override.
 
-## Try it
+## Live demo
+
+- App: https://meowsigma.github.io/stow-webmcp/
+- Source: https://github.com/meowsigma/stow-webmcp
+
+## Try it locally
 
 ```bash
 npm install
