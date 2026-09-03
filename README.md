@@ -21,6 +21,7 @@ People and agents can do something that was brittle before: pack a real constrai
 
 - App: https://meowsigma.github.io/stow-webmcp/
 - Source: https://github.com/meowsigma/stow-webmcp
+- Demo video (local, upload to YouTube for Devpost): [`docs/stow-demo.mp4`](docs/stow-demo.mp4)
 
 ## Try it locally
 

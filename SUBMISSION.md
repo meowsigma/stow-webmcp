@@ -34,6 +34,20 @@ Before WebMCP, an agent either clicked around a packing list or packed off-scree
 - Actionable error strings so agents recover (`Unknown item`, `pinned`, `Cannot seal`, `No pending proposal`).
 - On-page tool console uses `getTools` / `executeTool` so judges can exercise the API without a second client.
 
+## Live URL
+
+https://meowsigma.github.io/stow-webmcp/
+
+## Repository
+
+https://github.com/meowsigma/stow-webmcp
+
+Apache-2.0 (visible in repo About once GitHub detects `LICENSE`).
+
+## Demo video
+
+File: `docs/stow-demo.mp4` (44s, with narration). Upload to YouTube as public or unlisted and paste the URL on Devpost. YouTube upload is not automated.
+
 ## Testing instructions
 
 1. Open the live URL in ChatGPT’s in-app browser, or in Chrome 149+ with WebMCP enabled.
