@@ -160,7 +160,7 @@ async function demoHandoff(): Promise<void> {
 async function boot(): Promise<void> {
   usedNative = nativeExists();
   if (shouldLoadPolyfill(usedNative)) {
-    await loadScript("/webmcp-polyfill.js");
+    await loadScript(new URL("webmcp-polyfill.js", document.baseURI).href);
   }
   wireOnce();
   store.subscribe(() => {
