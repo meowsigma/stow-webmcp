@@ -70,6 +70,16 @@ export function render(store: Store, root: HTMLElement, native: boolean): void {
         <button class="ghost" data-demo>Watch a handoff</button>
       </div>
 
+      ${
+        pending
+          ? `<div class="proposal" role="status"><strong>Agent proposal — pins are kept</strong><p>${esc(pending.rationale)}</p>
+            <div class="actions">
+              <button class="solid" data-act="accept">Accept</button>
+              <button class="ghost" data-act="reject">Reject</button>
+            </div></div>`
+          : ""
+      }
+
       <form id="trip-form" class="trip panel" toolname="set_trip" tooldescription="Set the trip destination, dates, airline, and bag class." toolautosubmit>
         <label>Destination
           <input name="destination" required toolparamdescription="City or place name" value="${esc(trip?.destination ?? "")}">
@@ -156,15 +166,6 @@ export function render(store: Store, root: HTMLElement, native: boolean): void {
               )
               .join("")}
           </div>
-          ${
-            pending
-              ? `<div class="proposal"><strong>Pending proposal</strong><p>${esc(pending.rationale)}</p>
-                <div class="actions">
-                  <button class="solid" data-act="accept">Accept</button>
-                  <button class="ghost" data-act="reject">Reject</button>
-                </div></div>`
-              : ""
-          }
           <h2 style="margin-top:18px">Agent tools</h2>
           <div class="console" data-console></div>
         </aside>

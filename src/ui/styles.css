@@ -356,9 +356,15 @@ textarea:focus-visible {
 
 .proposal {
   border: 1px solid var(--brass);
-  border-radius: 12px;
-  padding: 12px;
-  margin-top: 12px;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin: 0 0 18px;
+  background: rgba(196, 165, 116, 0.12);
+}
+
+.proposal p {
+  margin: 8px 0 0;
+  color: var(--paper);
 }
 
 .log {
